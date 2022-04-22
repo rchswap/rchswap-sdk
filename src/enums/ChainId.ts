@@ -20,7 +20,7 @@ export enum ChainId {
   HECO_TESTNET = 256,
   HARMONY = 1666600000,
   HARMONY_TESTNET = 1666700000,
-  OKEX = 66,
+  OKEX = 660,
   OKEX_TESTNET = 65,
   CELO = 42220,
   PALM = 11297108109,
@@ -28,4 +28,5 @@ export enum ChainId {
   MOONRIVER = 1285,
   FUSE = 122,
   TELOS = 40,
+  RCH = 66,
 }
