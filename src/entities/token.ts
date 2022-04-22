@@ -68,10 +68,10 @@ export const WETH = {
   ),
   [ChainId.ROPSTEN]: new Token(
     ChainId.ROPSTEN,
-    '0xc778417E063141139Fce010982780140Aa0cD5Ab',
+    '0x4085e2Aa83F4F8Bdc01238D246b56bC3d742CAD2',
     18,
-    'WETH',
-    'Wrapped Ether'
+    'WRCH',
+    'Wrapped RCH'
   ),
   [ChainId.RINKEBY]: new Token(
     ChainId.RINKEBY,
@@ -157,12 +157,19 @@ export const WETH = {
     'WONE',
     'Wrapped ONE'
   ),
-  [ChainId.OKEX]: new Token(
-    ChainId.OKEX,
-    '0x8F8526dbfd6E38E3D8307702cA8469Bae6C56C15',
+  [ChainId.RCH]: new Token(
+    ChainId.RCH,
+    '0xE038BeEF31e21F85c33d279E95721e8d546b0cC5',
     18,
-    'WOKT',
-    'Wrapped OKExChain'
+    'WRCH',
+    'Wrapped RCH'
+  ),
+  [ChainId.RCH_DEV]: new Token(
+      ChainId.RCH_DEV,
+      '0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9',
+      18,
+      'WRCH',
+      'Wrapped RCH'
   ),
   [ChainId.OKEX_TESTNET]: new Token(
     ChainId.OKEX_TESTNET,

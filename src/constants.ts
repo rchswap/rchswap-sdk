@@ -24,7 +24,8 @@ export enum ChainId {
   HECO_TESTNET = 256,
   HARMONY = 1666600000,
   HARMONY_TESTNET = 1666700000,
-  OKEX = 66,
+  RCH = 66,
+  RCH_DEV = 31337,
   OKEX_TESTNET = 65
 }
 
@@ -39,11 +40,11 @@ export enum Rounding {
   ROUND_UP
 }
 
-export const INIT_CODE_HASH: string = '0xe18a34eb0e04b04f7a0ac29a6e80748dca96319b42c54d679cb821dca90c6303'
+export const INIT_CODE_HASH: string = '0xb2f1ab19834b4e55328d71cf148e5f61e722ff0e34f9c3bff75d0d708d06bd92'
 
 export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac',
-  [ChainId.ROPSTEN]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
+  [ChainId.ROPSTEN]: '0xD5296D5EaD95336e85033937B473D3003eCaE1d1',
   [ChainId.RINKEBY]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
   [ChainId.GÖRLI]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
   [ChainId.KOVAN]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
@@ -59,17 +60,18 @@ export const FACTORY_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.AVALANCHE]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
   [ChainId.FUJI]: '0xd00ae08403B9bbb9124bB305C09058E32C39A48c',
   [ChainId.HECO]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
-  [ChainId.HECO_TESTNET]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
+  [ChainId.HECO_TESTNET]: '0x81d8B570bF8f36F49c9AA320839Ccb526a294F9a',
   [ChainId.HARMONY]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
   [ChainId.HARMONY_TESTNET]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
-  [ChainId.OKEX]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4',
+  [ChainId.RCH]: '0xfC9f3C01746cFFbA895257191f0ECc61bC8F06E3',
+  [ChainId.RCH_DEV]: '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0',
   [ChainId.OKEX_TESTNET]: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4'
 }
 
 export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0xd9e1cE17f2641f24aE83637ab66a2cca9C378B9F',
   [ChainId.RINKEBY]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
-  [ChainId.ROPSTEN]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
+  [ChainId.ROPSTEN]: '0xE30f9a1a87b86748e4d1c938ECaDCF5A334fC904',
   [ChainId.GÖRLI]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
   [ChainId.KOVAN]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
   [ChainId.FANTOM]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
@@ -84,16 +86,17 @@ export const ROUTER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.AVALANCHE]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
   [ChainId.FUJI]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
   [ChainId.HECO]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
-  [ChainId.HECO_TESTNET]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
+  [ChainId.HECO_TESTNET]: '0x8F69FeaA007C4b530856A402205C2A27D1924B29',
   [ChainId.HARMONY]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
   [ChainId.HARMONY_TESTNET]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
-  [ChainId.OKEX]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',
+  [ChainId.RCH]: '0x8c0D4fecF251b896A63E5cD25b5CB8Dcfb2CBfeD',
+  [ChainId.RCH_DEV]: '0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9',
   [ChainId.OKEX_TESTNET]: '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506'
 }
 
 export const SUSHI_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0x6B3595068778DD592e39A122f4f5a5cF09C90fE2',
-  [ChainId.ROPSTEN]: '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F',
+  [ChainId.ROPSTEN]: '0x15DAc7023359Be7c4f0Df7693cfa78d58aA105C4',
   [ChainId.RINKEBY]: '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F',
   [ChainId.GÖRLI]: '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F',
   [ChainId.KOVAN]: '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F',
@@ -109,16 +112,17 @@ export const SUSHI_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.AVALANCHE]: '',
   [ChainId.FUJI]: '',
   [ChainId.HECO]: '',
-  [ChainId.HECO_TESTNET]: '',
+  [ChainId.HECO_TESTNET]: '0xE40b27862B0c9137B9826411B18A75eFd6075365',
   [ChainId.HARMONY]: '',
   [ChainId.HARMONY_TESTNET]: '',
-  [ChainId.OKEX]: '',
+  [ChainId.RCH]: '0xB9bcB70202bD2F79Ed8e0B1128a55786020b690A',
+  [ChainId.RCH_DEV]: '0x5FC8d32690cc91D4c39d9d3abcBD16989F875707',
   [ChainId.OKEX_TESTNET]: ''
 }
 
 export const MASTERCHEF_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.MAINNET]: '0xc2EdaD668740f1aA35E4D8f227fB8E17dcA888Cd',
-  [ChainId.ROPSTEN]: '0x80C7DD17B01855a6D2347444a0FCC36136a314de',
+  [ChainId.ROPSTEN]: '0x5E54C7D1E88920D6F7e487dE8c71492d45F1726d',
   [ChainId.RINKEBY]: '0x80C7DD17B01855a6D2347444a0FCC36136a314de',
   [ChainId.GÖRLI]: '0x80C7DD17B01855a6D2347444a0FCC36136a314de',
   [ChainId.KOVAN]: '0x80C7DD17B01855a6D2347444a0FCC36136a314de',
@@ -134,10 +138,11 @@ export const MASTERCHEF_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.AVALANCHE]: '',
   [ChainId.FUJI]: '',
   [ChainId.HECO]: '',
-  [ChainId.HECO_TESTNET]: '',
+  [ChainId.HECO_TESTNET]: '0x7f1e3a2A95a1c2c954C3C2EA104e49f31531527F',
   [ChainId.HARMONY]: '',
   [ChainId.HARMONY_TESTNET]: '',
-  [ChainId.OKEX]: '',
+  [ChainId.RCH]: '0xeDDE4713423D62745E106463454B3C73eCfC5E6c',
+  [ChainId.RCH_DEV]: '0x0165878A594ca255338adfa4d48449f69242Eb8F',
   [ChainId.OKEX_TESTNET]: ''
 }
 
@@ -162,7 +167,8 @@ export const BAR_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
   [ChainId.HARMONY_TESTNET]: '',
-  [ChainId.OKEX]: '',
+  [ChainId.RCH]: '',
+  [ChainId.RCH_DEV]: '',
   [ChainId.OKEX_TESTNET]: ''
 }
 
@@ -187,7 +193,8 @@ export const MAKER_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
   [ChainId.HARMONY_TESTNET]: '',
-  [ChainId.OKEX]: '',
+  [ChainId.RCH]: '',
+  [ChainId.RCH_DEV]: '',
   [ChainId.OKEX_TESTNET]: ''
 }
 
@@ -212,7 +219,34 @@ export const TIMELOCK_ADDRESS: { [chainId in ChainId]: string } = {
   [ChainId.HECO_TESTNET]: '',
   [ChainId.HARMONY]: '',
   [ChainId.HARMONY_TESTNET]: '',
-  [ChainId.OKEX]: '',
+  [ChainId.RCH]: '',
+  [ChainId.RCH_DEV]: '',
+  [ChainId.OKEX_TESTNET]: ''
+}
+
+export const IDO_MASTER_ADDRESS: { [chainId in ChainId]: string } = {
+  [ChainId.MAINNET]: '',
+  [ChainId.ROPSTEN]: '',
+  [ChainId.RINKEBY]: '',
+  [ChainId.GÖRLI]: '',
+  [ChainId.KOVAN]: '',
+  [ChainId.FANTOM]: '',
+  [ChainId.FANTOM_TESTNET]: '',
+  [ChainId.MATIC]: '',
+  [ChainId.MATIC_TESTNET]: '',
+  [ChainId.XDAI]: '',
+  [ChainId.BSC]: '',
+  [ChainId.BSC_TESTNET]: '',
+  [ChainId.ARBITRUM]: '',
+  [ChainId.MOONBASE]: '',
+  [ChainId.AVALANCHE]: '',
+  [ChainId.FUJI]: '',
+  [ChainId.HECO]: '',
+  [ChainId.HECO_TESTNET]: '',
+  [ChainId.HARMONY]: '',
+  [ChainId.HARMONY_TESTNET]: '',
+  [ChainId.RCH]: '0xaedf62938c23643EeFe9784F548C7Af5d6fe9CeC',
+  [ChainId.RCH_DEV]: '',
   [ChainId.OKEX_TESTNET]: ''
 }
 
