@@ -1,5 +1,5 @@
 {
-  "name": "@sushiswap/sdk",
+  "name": "@rchswap/sdk",
   "license": "MIT",
   "version": "5.0.0-canary.117",
   "description": "🛠 An SDK for building applications on top of SushiSwap.",
@@ -8,9 +8,9 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/sushiswap/sushiswap-sdk",
+  "repository": "https://github.com/rchswap/rchswap-sdk",
   "keywords": [
-    "sushiswap",
+    "rchswap",
     "ethereum",
     "sdk"
   ],
